@@ -69,23 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
   function randomApple() {
     do {
       appleIndex = Math.floor(Math.random() * squares.length)
-    } while (squares[appleIndex].classList.contains('snake')) //making sure apples dont appear on the snake
+    } while (squares[appleIndex].classList.contains('snake')) //Impede que as maças nasçam na cobra
     squares[appleIndex].classList.add('apple')
   }
 
 
-  //assign functions to keycodes
+  //atribui a funcionalidade das teclas
   function control(e) {
     squares[currentIndex].classList.remove('snake')
 
     if (e.keyCode === 39) {
-      direction = 1 //if we press the right arrow on our keyboard, the snake will go right one
+      direction = 1 //Seta para a direita, faz com que a cobra se mova para a esquerda
     } else if (e.keyCode === 38) {
-      direction = -width // if we press the up arrow, the snake will go back ten divs, appearing to go up
+      direction = -width //Seta para cima, faz a cobra subir
     } else if (e.keyCode === 37) {
-      direction = -1 // if we press left, the snake will go left one div
+      direction = -1 //Seta para a esquerda, faz a cobra ir para a esquerda
     } else if (e.keyCode === 40) {
-      direction = +width //if we press down, the snake head will instantly appear in the div ten divs from where you are now
+      direction = +width //Seta para baixo
     }
   }
 
