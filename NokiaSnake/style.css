@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -12,9 +14,35 @@
 }
 
 .snake {
-    background-color: blue;
+    background-color: green
 }
 
 .apple {
-    background-color: purple;
+    background-color: #defe47;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #7700a6;
+    padding: 2rem;
+}
+
+.score {
+    font-family: 'Press Start 2P', cursive;
+    color: #00b3fe;
+    font-size: 2rem;
+    text-shadow: 0.5rem 0.5rem #0016ee;
+    padding: 2rem;
+}
+
+.start {
+    background-color: #0016ee;
+    font-family: 'Press Start 2P', cursive;
+    color: #00b3fe;
+    font-size: 2rem;
+    padding: 1rem;
+    border: #defe47 solid 2px;
 }
