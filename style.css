@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #7700a6;
+}
+
+.glow {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #defe47;
+    text-align: left;
+    text-shadow: 0.5rem 0.5rem #0016ee;
+}
+
+.card {
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-info h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color: greenyellow;
+}
+
+.card-info button {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    color: purple;
+    background-color: lightblue;
+    border: none;
+    border-radius: 2px;
+}
+
+.card-info:hover button {
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    color: lightblue;
+    background-color: purple;
+}
